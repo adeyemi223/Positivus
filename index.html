@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/headerLogo.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Positivus</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="logo">
+        <a href="#">
+          <img src="images/headerLogo.svg" alt="Logo" />
+          <h1>Positivus</h1>
+        </a>
+      </div>
+
+      <nav class="nav">
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Use Cases</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <a href="#" class="btn">Request a quote</a>
+      </nav>
+
+      <div class="menu">
+        <i class="bx bx-menu"></i>
+      </div>
+    </header>
+
+    <!-- <section class="aboutUs" id="aboutUs">
+      <div class="heading_about">
+        <h1>Navigating the digital landscape for success</h1>
+        <p>
+          Our digital marketing agency helps businesses grow and succeed online
+          through a range of services including SEO, PPC, social media
+          marketing, and content creation.
+        </p>
+        <a href="#" class="btn sbtn">Book a consultation</a>
+      </div>
+
+      <div class="header_img">
+        <img src="images/mainHeaderImg.svg" alt="illustration">
+      </div>
+    </section> -->
+
+    <script>
+      const header = document.querySelector("header");
+      window.addEventListener("scroll", function () {
+        header.classList.toggle("sticky", window.screenY > 100);
+      });
+
+      const menu = document.querySelector(".menu");
+      const nav = document.querySelector(".nav");
+
+      menu.onclick = function () {
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
