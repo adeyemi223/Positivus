@@ -85,6 +85,15 @@
 
 /* media queries */
 
+@media screen and (max-width:1320px) {
+    .header{
+        padding: 0.75rem 4%;
+        transition: .5s;
+    }
+}
+
+
+
 @media screen and (max-width:1200px) {
     .header{
         padding: 0.75rem 4%;
