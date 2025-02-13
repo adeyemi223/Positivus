@@ -129,6 +129,67 @@ section {
   float: right;
 }
 
+.Logos {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo_animation_container {
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  animation: loop 15s linear infinite;
+}
+
+.innerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.innerLogo img {
+  width: 100px;
+  margin: 0 3rem;
+  filter: brightness(0%);
+}
+
+@keyframes loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.services_content{
+  display: flex;
+  gap: 2rem;
+}
+
+.services_content h3{
+  font-size: 2rem;
+  padding: 0 0.6rem ;
+  border-radius: 5px;
+  background-color: #B9FF66;
+}
+
+.services_content p{
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 
 /* ===================desktop screen size================= */
