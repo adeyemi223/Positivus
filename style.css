@@ -247,7 +247,7 @@ section {
 
   .header .nav {
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 300px;
@@ -300,6 +300,8 @@ section {
   .heading_about p {
     font-size: 0.9rem;
   }
+
+  
 }
 
 /* =================mini mobile screen size====================== */
@@ -312,4 +314,20 @@ section {
   .heading_about p {
     font-size: 0.7rem;
   }
+
+  /* .header .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    z-index: 10001;
+    background-color: #fff;
+  } */
+
 }
