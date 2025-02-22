@@ -88,6 +88,7 @@ section {
 
 #aboutUs {
   display: flex;
+  padding-top: 5rem;
 }
 
 .heading_about,
@@ -162,33 +163,100 @@ section {
   }
 }
 
-
-.services_content{
+.services_content {
   display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.services_content h3 {
+  font-size: 2rem;
+  padding: 0 0.6rem;
+  border-radius: 5px;
+  background-color: #b9ff66;
+}
+
+.services_content p {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  max-width: 570px;
+}
+
+.service_grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 2rem;
 }
 
-.services_content h3{
-  font-size: 2rem;
-  padding: 0 0.6rem ;
-  border-radius: 5px;
-  background-color: #B9FF66;
+.serviceGrid {
+  aspect-ratio: 2/1;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  background: #f3f3f3;
+  border-radius: 30px;
 }
 
-.services_content p{
-  font-size: 1.1rem;
-  font-weight: lighter;
+.left,
+.right {
+  flex-basis: 50%;
 }
 
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.left a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+}
 
+.left a:hover {
+  color: #7d7a7a;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
 
+.left a img {
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #000000;
+}
 
+.right img {
+  width: 80%;
+  margin-top: 2rem;
+}
 
+.leftTextContent h2 {
+  font-size: 1.5rem;
+}
 
+.blackBottomBg {
+  position: relative;
+  border: 1px solid #000000;
+}
 
-
-
+.blackBottomBg::after {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  bottom: -9px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #000000;
+  border-radius: 30px;
+}
 
 /* media queries */
 
@@ -210,6 +278,10 @@ section {
 
   .heading_about h1 {
     font-size: 4rem;
+  }
+
+  .service_grid_container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
 
@@ -288,6 +360,14 @@ section {
   .header_img img {
     float: left;
   }
+
+  .services_content {
+    flex-direction: column;
+  }
+
+  .services_content h3 {
+    max-width: 150px;
+  }
 }
 
 /* ===================mobile screen size==================== */
@@ -301,7 +381,24 @@ section {
     font-size: 0.9rem;
   }
 
-  
+  section {
+    padding: 3rem 3%;
+  }
+
+  .right img {
+    width: 80%;
+    margin-top: 1rem;
+    float: right;
+  }
+
+  .left a {
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .serviceGrid {
+    padding: 1rem;
+  }
 }
 
 /* =================mini mobile screen size====================== */
@@ -315,19 +412,7 @@ section {
     font-size: 0.7rem;
   }
 
-  /* .header .nav {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 1rem;
-    z-index: 10001;
-    background-color: #fff;
-  } */
-
+  section {
+    padding: 3rem 3%;
+  }
 }
