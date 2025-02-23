@@ -276,6 +276,7 @@ section {
   border-radius: 30px;
   display: flex;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .proposal_content,
@@ -286,13 +287,12 @@ section {
 .proposal_content h3 {
   font-size: 2.3rem;
   font-weight: 500;
-  margin: 2rem;
+  margin-bottom: 2rem;
 }
 
 .proposal_content p {
-  max-width: 600px;
-  font-size: 1.4rem;
-  margin-left: 1.8rem;
+  max-width: 550px;
+  font-size: 1.3rem;
   margin-bottom: 1.8rem;
 }
 
@@ -300,13 +300,12 @@ section {
   font-size: 1rem;
   background-color: #000000;
   color: #fff;
-  margin-left: 1.5rem;
 }
 
 .proposalBtn:hover {
   background-color: transparent;
   color: #000000;
-  border: 2px solid #000000;
+  border: 3px solid #000000;
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -314,9 +313,72 @@ section {
 .proposal_sideImg img {
   width: 70%;
   float: right;
-  margin-top: -30px;
-  margin-bottom: -20px;
+  margin-top: -60px;
+  margin-bottom: -50px;
 }
+
+.case_studies_header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.case_studies_header h3 {
+  font-size: 2rem;
+  padding: 0 0.6rem;
+  border-radius: 5px;
+  background-color: #b9ff66;
+}
+
+.case_studies_header p {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  max-width: 570px;
+}
+
+.case_grid_layout{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  background-color: #191A23;
+  border-radius: 30px;
+  margin-top: 4rem;
+  padding-top:  3rem;
+  padding-bottom: 3rem;
+}
+
+.grid1 {
+  padding: 5rem;
+}
+
+.grid1 p{
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 1rem;
+}
+
+.grid1 a{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #b9ff66;
+}
+
+.grid1 a img{
+  width: 20px;
+}
+
+.grid1:nth-child(1) {
+  border-right: 2px solid #fff;
+}
+
+.grid1:nth-child(3) {
+  border-left: 2px solid #fff;
+}
+
+
+
 
 /* media queries */
 
@@ -351,6 +413,10 @@ section {
   .proposal_content p {
     max-width: 600px;
     font-size: 1.2rem;
+  }
+
+  .grid1 {
+    padding: 3rem;
   }
 }
 
@@ -436,6 +502,20 @@ section {
 
   .services_content h3 {
     max-width: 150px;
+  }
+
+  .getFreeProposal {
+    flex-direction: column;
+  }
+
+  .proposal_sideImg {
+    display: none;
+  }
+
+  .case_studies_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
 }
 
