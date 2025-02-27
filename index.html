@@ -23,7 +23,7 @@
       <nav class="nav">
         <a href="#aboutUs">About Us</a>
         <a href="#services">Services</a>
-        <a href="#">Use Cases</a>
+        <a href="#caseStudies">Use Cases</a>
         <a href="#">Pricing</a>
         <a href="#">Blog</a>
         <a href="#" class="btn">Request a quote</a>
@@ -453,6 +453,51 @@
       </div>
     </section>
 
+    <section class="our_working_progress" id="our_working_progress">
+      <div class="work_progress_header">
+        <h3>Our Working Process</h3>
+        <p>Step-by-Step Guide to Achieving Your Business Goals</p>
+      </div>
+
+      <div class="work_FAQs">
+        <div class="question">
+          <div class="question_header">
+            <h1>01</h1>
+            <h2>Consultation</h2>
+          </div>
+          <a href="#"><img src="images/headerLogo.svg" alt="logo" /></a>
+        </div>
+
+        <div class="answer">
+          <p>
+            During the initial consultation, we will discuss your business goals
+            and objectives, target audience, and current marketing efforts. This
+            will allow us to understand your needs and tailor our services to
+            best fit your requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="work_FAQs space_down">
+        <div class="question">
+          <div class="question_header">
+            <h1>02</h1>
+            <h2>Research and Strategy Development</h2>
+          </div>
+          <a href="#"><img src="images/headerLogo.svg" alt="logo" /></a>
+        </div>
+
+        <div class="answer">
+          <p>
+            During the initial consultation, we will discuss your business goals
+            and objectives, target audience, and current marketing efforts. This
+            will allow us to understand your needs and tailor our services to
+            best fit your requirements.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- ===============JS================= -->
     <script>
       const header = document.querySelector("header");
@@ -466,6 +511,13 @@
       menu.onclick = function () {
         nav.classList.toggle("active");
       };
+
+      const FAQs = document.querySelectorAll(".work_FAQs");
+      FAQs.forEach((work_FAQs) => {
+        work_FAQs.addEventListener("click", () => {
+          work_FAQs.classList.toggle("active");
+        });
+      });
     </script>
   </body>
 </html>
