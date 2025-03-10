@@ -1048,7 +1048,9 @@ footer {
     align-items: stretch;
   }
 
-  .contact_form input {
+  .contact_form input,
+  .form input,
+  .form textarea {
     max-width: 100%;
   }
 }
