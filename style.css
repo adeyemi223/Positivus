@@ -841,8 +841,10 @@ footer {
   padding: 1.05rem 1rem;
   font-size: 1rem;
   border-radius: 8px;
+  border:none;
   background-color: #b9ff66;
   cursor: pointer;
+  color:#000 !important
 }
 
 .footer_btn:hover {
